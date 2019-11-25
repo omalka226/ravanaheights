@@ -37,4 +37,30 @@
 body{
 	position: relative;
 	font-family: 'Lato';
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.frame-container{
+	position: relative;
+	display: flex;
+	width:100vw;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#home{
+	background-image: url(../images/home_bg.jpg);
+}
+#rooms{
+	background-image: url(../images/);
+}
+#gallery{
+	background-image: url(../images/gallery_bg.jpg);
+}
+#reviews{
+	background-image: url(../images/review_bg.jpg);
+}
+#booknow{
+	background-image: url(../images/book_now.jpg);
 }

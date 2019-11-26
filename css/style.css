@@ -67,6 +67,43 @@ body{
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
+.btn {
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: 2px solid #e74c3c;
+	border-radius: 2em;
+	color: #e74c3c;
+	cursor: pointer;
+	display: flex;
+	align-self: center;
+	font-size: .7em;
+	font-weight: 400;
+	line-height: 1;
+	padding: .8em 1.5em;
+	text-decoration: none;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.btn:hover, .btn:focus {
+	color: #fff;
+	outline: 0;
+}
+.fourth {
+	border-color: #1f1f1f;
+	color: #1f1f1f;
+	background-image: linear-gradient(45deg, #1f1f1f 50%, transparent 50%);
+	background-position: 100%;
+	background-size: 400%;
+	transition: background 300ms ease-in-out;
+}
+.fourth:hover {
+	background-position: 0;
+	color:#f1f1f1;
+}
 .frame-container{
 	position: relative;
 	width:100vw;
@@ -85,6 +122,7 @@ body{
 }
 #rooms{
 	background-image: url(../images/rooms_bg.jpg);
+	padding: 50px 100px;
 }
 #gallery{
 	background-image: url(../images/gallery_bg.jpg);
@@ -120,7 +158,20 @@ footer{
 	width:100%;
 	height: 400px;
 	z-index: -1;
-	background: #1f1f1f;
+	background: #060606;
+}
+footer:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background-image: url(../images/footer_bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: difference;
+	background-color: #00;
 }
 #home-description-container{
 	padding:20px;
@@ -193,7 +244,7 @@ footer{
 	margin-right: 20px;
 }
 .room-container{
-	width:300px;
+	width: 90%;
 	position: relative;
 	display: flex;
 	padding: 20px;
@@ -228,8 +279,25 @@ span.room-price {
     font-weight: 300;
     color: #1f1f1f;
 }
-
+.room-wrapper{
+	position: absolute;
+	width:80%;
+	height: 75%;
+	bottom: 0;
+	right:0;
+	display: -webkit-flex; /* Safari */
+	display: flex;
+}
 .room-detail-container p {
-    font-size: 12px;
+    font-size: 11px;
     text-align: justify;
+    margin-bottom: 20px;
+}
+.room{
+	flex-grow: 1;
+	-webkit-flex-grow: 1;
+	display: flex;
+	display: -webkit-flex; /* Safari */
+	align-items: center;
+	justify-content: center;
 }

@@ -1,3 +1,6 @@
 <section id="gallery" class="frame-container">
-	<h2 class="title">Gallery</h2>
+	<div class="inner-container">
+		<h2 class="title">Gallery</h2>
+		
+	</div>
 </section>

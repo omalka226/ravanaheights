@@ -84,7 +84,7 @@ body{
 	background-image: url(../images/home_bg.jpg);
 }
 #rooms{
-	background-image: url(../images/);
+	background-image: url(../images/rooms_bg.jpg);
 }
 #gallery{
 	background-image: url(../images/gallery_bg.jpg);
@@ -132,9 +132,9 @@ footer{
 	height: auto;
 }
 #home-description-container img{
-	width:55%;
+	width:35%;
 	position: relative;
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	display: block;
 }
 #home-description-container p{
@@ -170,4 +170,66 @@ footer{
 	display: block;
 	margin:auto;
 	cursor: pointer;
+}
+
+/*Rooms Section*/
+#rooms .inner-container{
+	flex-direction: column;
+	align-items: baseline;
+}
+#rooms::before{
+	content:'';
+	position: absolute;
+	width:100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background-image: url(../images/rooms_bg.jpg);
+	-webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+	filter: blur(2px);
+}
+.controller{
+	width: 20px;
+	margin-right: 20px;
+}
+.room-container{
+	width:300px;
+	position: relative;
+	display: flex;
+	padding: 20px;
+	background: #f1f1f1;
+	flex-direction: column;
+}
+
+.room-image-container {
+    width: 100%;
+    position: relative;
+    height: 150px;
+    background: red;
+    margin-bottom: 10px;
+}
+
+h2.room-title {
+    font-size: .9em;
+    font-weight: 900;
+    color: #282828;
+}
+
+.room-detail-upper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+span.room-price {
+    font-size: 2em;
+    font-weight: 300;
+    color: #1f1f1f;
+}
+
+.room-detail-container p {
+    font-size: 12px;
+    text-align: justify;
 }

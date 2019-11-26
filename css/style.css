@@ -151,28 +151,7 @@ body{
 	bottom:15px;
 	left:0;
 }
-footer{
-	position: -webkit-sticky;
-	position: sticky;
-	bottom:0;
-	width:100%;
-	height: 400px;
-	z-index: -1;
-	background: #060606;
-}
-footer:before{
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top:0;
-	left: 0;
-	background-image: url(../images/footer_bg.jpg);
-	background-position: center;
-	background-size: cover;
-	background-blend-mode: difference;
-	background-color: #00;
-}
+
 #home-description-container{
 	padding:20px;
 	position: relative;
@@ -300,4 +279,78 @@ span.room-price {
 	display: -webkit-flex; /* Safari */
 	align-items: center;
 	justify-content: center;
+}
+
+
+
+
+/*Footer Stylings*/
+footer{
+	/*position: -webkit-sticky;*/
+	/* position: sticky; */
+	bottom:0;
+	width:100%;
+	height: 400px;
+	z-index: 1;
+	background: #060606;
+}
+footer:before{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top:0;
+	left: 0;
+	background-image: url(../images/footer_bg.jpg);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: difference;
+	background-color: #00;
+}
+
+.footer-inner {
+    padding: 50px 100px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 10;
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+.footer-column p{
+	color:#ddd;
+	margin: 0 0 20px 0;
+	font-size: .85em;
+	font-weight: 300;
+}
+.footer-column p a{
+	color:#ddd;
+	text-decoration: none;
+}
+h2.footer-title {
+    color: #ececec;
+    font-family: 'Peace Sans';
+    font-size: 1.7em;
+	margin:0 0 20px 0;	
+}
+.footer-bottom{
+	padding: 20px 50px;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.footer-bottom span{
+	color:#ddd;
+	font-size: .6em;
 }

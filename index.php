@@ -13,6 +13,7 @@
 			include 'content/gallery.php';
 			include 'content/reviews.php';
 			include 'content/booknow.php';
+			include 'common/footer.php';
 			?>
 		</div>
 	</body>

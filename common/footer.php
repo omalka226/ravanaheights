@@ -17,6 +17,6 @@
 	</div>
 	<div class="footer-bottom">
 		<span>Copyright 2019, Ravana Heights, All Rights Reserved</span>
-		<span>Designed by</span>
+		<span>Designed by <a href="https://createrixlabs.com" target="_blank"><img src="images/createrix.png" class="createrix"/></a></span>
 	</div>
 </footer>

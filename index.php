@@ -16,5 +16,6 @@
 			include 'common/footer.php';
 			?>
 		</div>
+		<?php include 'common/js.php';?>
 	</body>
 </html>	

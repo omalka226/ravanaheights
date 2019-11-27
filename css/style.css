@@ -157,8 +157,8 @@ body{
 	position: relative;
 	background: #f1f1f1;
 	color: #1f1f1f;
-	border:3px solid #1f1f1f;
-	width:350px;
+	border: 5px solid #1f1f1f;
+	width: 30vw;
 	height: auto;
 }
 #home-description-container img{
@@ -359,4 +359,41 @@ h2.footer-title {
 	height:150px;
 	background: #00ff00;
 	position: relative;
+}
+
+.review-container {
+    flex: 4;
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-header {
+    flex: 2;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.review-header .title {
+    line-height: 0.8;
+    padding-bottom: 20px;
+    text-align: right;
+}
+.review-header .title:after{
+	right:0;
+	left:auto;
+	width: 70%;
+}
+
+.review-wrapper {
+    width: 80%;
+    height: 100%;
+    position: relative;
+    background: #fff;
 }
